@@ -12,6 +12,10 @@
   margin-bottom: 10px;
 }
 
+.Item__image {
+  cursor: pointer;
+}
+
 .Item__image img {
   height: 280px;
   width: 100%;

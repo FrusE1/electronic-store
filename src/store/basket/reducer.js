@@ -15,6 +15,11 @@ export default function basketReducer(state = initialState, action) {
           count: state.count + 1
         }
       }
+    case "REMOVE_FROM_BASKET":
+      return {
+        items: state.items.filter(item => item.id !== action.payload),
+        count: state.count - 1
+      }
     default:
       // Нет изменений
       return state;

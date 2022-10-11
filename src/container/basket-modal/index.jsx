@@ -1,25 +1,28 @@
 import React, { useCallback } from 'react';
-import { useSelector } from 'react-redux';
-import Item from '../../component/item-basket';
+import { useDispatch, useSelector } from 'react-redux';
+import ItemBasket from '../../component/item-basket';
 import LayoutModal from '../../wrappers/layout-modal';
+import basket from "../../store/basket/actions";
 import List from "../../component/list";
 import './style.css';
 
 export default function BasketModal() {
 
   const items = useSelector(state => state.basket.items);
+  const dispatch = useDispatch();
 
   const callbacks = {
-    addToBasket: () => { }
+    // Удаление товара из корзины
+    removeFromBasket: useCallback((id) => dispatch(basket.remove(id)), [])
   }
 
   const renders = {
-    // Отрисовка карточки товара
+    // Отрисовка карточки товара в корзине
     item: useCallback((item) => {
-      return <Item
+      return <ItemBasket
         item={item}
-        addToBasket={callbacks.addToBasket}
-      ></Item>
+        removeFromBasket={callbacks.removeFromBasket}
+      ></ItemBasket>
     }, [])
   }
 

@@ -25,7 +25,7 @@ function App() {
 
   const callbacks = {
     // Добавление товара в корзину
-    addToBasket: useCallback((item) => dispatch(basket.add(item)), [])
+    addToBasket: useCallback((item) => dispatch(basket.add(item)), []),
   }
 
   const renders = {
