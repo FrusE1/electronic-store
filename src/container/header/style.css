@@ -1,0 +1,11 @@
+.Header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: end;
+}
+
+
+.Header__basket {
+  height: 100%;
+}

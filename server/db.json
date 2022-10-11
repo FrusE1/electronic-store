@@ -1,0 +1,263 @@
+{
+  "electronics": [
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 1
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 2
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 3
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 4
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 5
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 6
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9 rjhvrvwnjrklv ektnkjfldnvjkfnvjkdfnvn fdkjnfvnfndfnjdfk njkdfnkjdf",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 7
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 8
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 9
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 10
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 11
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 12
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 13
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 14
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 15
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 16
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 17
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 18
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 19
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 20
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 21
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 22
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 23
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 24
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 25
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 26
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 27
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 28
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 29
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 30
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 31
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 32
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 33
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 34
+    },
+    {
+      "type": "notebook",
+      "name": "Lenovo IdeaPad Gaming 3",
+      "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
+      "price": 62990,
+      "id": 35
+    },
+    {
+      "type": "camera",
+      "name": "Nikon D3100",
+      "image": "https://www.pngall.com/wp-content/uploads/4/DSLR-Camera.png",
+      "price": 45550,
+      "id": 36
+    },
+    {
+      "type": "smartphone",
+      "name": "Xiaomi Redmi Note 9",
+      "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
+      "price": 12340,
+      "id": 37
+    }
+  ]
+}

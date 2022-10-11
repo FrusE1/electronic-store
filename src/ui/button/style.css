@@ -1,0 +1,25 @@
+.Button {
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Button_type_blue {
+  background-color: rgb(87, 87, 236);
+}
+
+.Button_type_blue:hover,
+.Button_type_blue:focus {
+  background-color: rgb(44, 44, 200);
+}
+
+.Button_type_red {
+  background-color: rgb(246, 10, 10);
+}
+
+.Button_type_red:hover,
+.Button_type_red:focus {
+  background-color: rgb(238, 112, 112);
+}

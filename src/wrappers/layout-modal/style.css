@@ -1,0 +1,39 @@
+.Layout-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.85);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Layout-modal__content {
+  max-height: 90%;
+  min-height: 200px;
+  max-width: 1300px;
+  margin: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.Layout-modal__content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Layout-modal__content::-webkit-scrollbar-thumb {
+  background-color: rgba(59, 59, 61, 0.3);
+  border-radius: 4px;
+}
+
+.Layout-modal__close {
+  text-align: end;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,35 @@
+.Basket {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.Basket__icon {
+  height: 100%;
+}
+
+.Basket__counter {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+.Basket__counter::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.Basket__counter span {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
