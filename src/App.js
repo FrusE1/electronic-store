@@ -8,16 +8,24 @@ import basket from "./store/basket/actions";
 import './style.css';
 import Layout from "./wrappers/layout";
 import BasketModal from "./container/basket-modal";
+import Pagination from "./component/pagination";
+import getAmountOfPage from "./utils/amount-pages";
+import numberToArray from "./utils/number-to-array";
 
 function App() {
 
-  const selector = useSelector(state => {
+  const dispatch = useDispatch();
+  const select = useSelector(state => {
     return {
       electronics: state.electronics.items,
+      count: state.electronics.count,
+      params: state.electronics.params,
       modal: state.modal
     }
   });
-  const dispatch = useDispatch();
+
+  const pagePagination = getAmountOfPage(select.count, select.params.limit);
+  const paginationArray = numberToArray(pagePagination);
 
   useEffect(() => {
     dispatch(loadElectronics())
@@ -26,6 +34,8 @@ function App() {
   const callbacks = {
     // Добавление товара в корзину
     addToBasket: useCallback((item) => dispatch(basket.add(item)), []),
+    // Загрузка новой страницы
+    loadingPage: useCallback((page) => dispatch(loadElectronics({ page })))
   }
 
   const renders = {
@@ -42,9 +52,10 @@ function App() {
     <>
       <Layout>
         <Header></Header>
-        <List items={selector.electronics} render={renders.item}></List>
+        <List items={select.electronics} render={renders.item}></List>
+        <Pagination currentPage={select.params.page} pages={paginationArray} loadingPage={callbacks.loadingPage} />
       </Layout>
-      {selector.modal === 'basket' && <BasketModal />}
+      {select.modal === 'basket' && <BasketModal />}
     </>
   );
 }

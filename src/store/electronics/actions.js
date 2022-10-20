@@ -1,6 +1,6 @@
 const electronics = {
-  load: (item) => {
-    return { type: "LOAD_ELECTRONICS", payload: item };
+  load: (items, count, params) => {
+    return { type: "LOAD_ELECTRONICS", payload: { items, count, params } };
   }
 }
 
