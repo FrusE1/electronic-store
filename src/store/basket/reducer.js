@@ -1,6 +1,7 @@
 const initialState = {
   items: [],
-  count: 0
+  count: 0,
+  waiting: false
 }
 
 export default function basketReducer(state = initialState, action) {

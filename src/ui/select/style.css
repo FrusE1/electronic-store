@@ -1,0 +1,10 @@
+.Select {
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.Select:focus,
+.Select:hover {
+  border: 1px solid rgb(94, 94, 94);
+}

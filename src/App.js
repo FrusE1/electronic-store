@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useCallback, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Header from "./container/header";
 import Item from "./component/item";
@@ -11,6 +11,9 @@ import BasketModal from "./container/basket-modal";
 import Pagination from "./component/pagination";
 import getAmountOfPage from "./utils/amount-pages";
 import numberToArray from "./utils/number-to-array";
+import Spinner from "./wrappers/spinner";
+import useInit from "./hooks/use-init";
+import Filter from "./container/filter";
 
 function App() {
 
@@ -20,6 +23,7 @@ function App() {
       electronics: state.electronics.items,
       count: state.electronics.count,
       params: state.electronics.params,
+      waiting: state.electronics.waiting,
       modal: state.modal
     }
   });
@@ -27,15 +31,15 @@ function App() {
   const pagePagination = getAmountOfPage(select.count, select.params.limit);
   const paginationArray = numberToArray(pagePagination);
 
-  useEffect(() => {
-    dispatch(loadElectronics())
-  }, [])
+  useInit(() => {
+    dispatch(loadElectronics(select.params, {}, true))
+  }, [], { backForward: true })
 
   const callbacks = {
     // Добавление товара в корзину
     addToBasket: useCallback((item) => dispatch(basket.add(item)), []),
     // Загрузка новой страницы
-    loadingPage: useCallback((page) => dispatch(loadElectronics({ page })))
+    loadingPage: useCallback((page) => dispatch(loadElectronics(select.params, { page })), [])
   }
 
   const renders = {
@@ -51,9 +55,12 @@ function App() {
   return (
     <>
       <Layout>
-        <Header></Header>
-        <List items={select.electronics} render={renders.item}></List>
-        <Pagination currentPage={select.params.page} pages={paginationArray} loadingPage={callbacks.loadingPage} />
+        <Header />
+        <Filter />
+        <Spinner waiting={select.waiting}>
+          <List items={select.electronics} render={renders.item}></List>
+          <Pagination currentPage={select.params.page} pages={paginationArray} loadingPage={callbacks.loadingPage} />
+        </Spinner>
       </Layout>
       {select.modal === 'basket' && <BasketModal />}
     </>

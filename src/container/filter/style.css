@@ -1,0 +1,11 @@
+.Filter {
+  padding: 10px 0;
+}
+
+.Filter>* {
+  width: 150px;
+}
+
+.Filter>*:not(:last-child) {
+  margin-right: 20px;
+}

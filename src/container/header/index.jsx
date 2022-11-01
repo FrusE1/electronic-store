@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Basket from '../../ui/basket';
 import modal from '../../store/modal/actions';
 import { cn as bem } from "@bem-react/classname";
-import './style.css'
+import './style.css';
 
 function Header() {
 

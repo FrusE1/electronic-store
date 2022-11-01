@@ -1,6 +1,14 @@
 const electronics = {
-  load: (items, count, params) => {
-    return { type: "LOAD_ELECTRONICS", payload: { items, count, params } };
+  load: () => {
+    return { type: "LOAD_ELECTRONICS" }
+  },
+
+  loadSuccess: (items, count, params) => {
+    return { type: "LOAD_SUCCESS_ELECTRONICS", payload: { items, count, params } };
+  },
+
+  loadError: (error) => {
+    return { type: "LOAD_ERROR_ELECTRONICS", payload: error };
   }
 }
 
