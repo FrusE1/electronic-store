@@ -28,7 +28,9 @@ function LayoutModal({ children }) {
   return (
     <div className={cn()} onClick={closeModal}>
       <div className={cn('content')} onClick={(e) => e.stopPropagation()}>
-        <div className={cn('close')} onClick={closeModal}>X</div>
+        <div className={cn('head')}>
+          <div className={cn('close')} onClick={closeModal}>X</div>
+        </div>
         {children}
       </div>
     </div>

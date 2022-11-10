@@ -1,21 +1,22 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { cn as bem, withNaming } from "@bem-react/classname";
-import '../style.css';
+import './style.css';
 
-function ButtonRed({ children, ...props }) {
+function Button({ children, style, ...props }) {
 
   const bem = withNaming({ e: '__', m: '_' })
   const cn = bem('Button');
 
   return (
-    <button className={cn({ type: 'red' })} {...props}>{children}</button>
+    <button className={cn(style ? { type: style } : null)} {...props}>{children}</button>
   )
 }
 
-ButtonRed.propTypes = {
+Button.propTypes = {
   children: propTypes.node.isRequired,
+  type: propTypes.string,
   props: propTypes.object
 }
 
-export default React.memo(ButtonRed);
+export default React.memo(Button);

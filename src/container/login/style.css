@@ -1,0 +1,44 @@
+.Login {
+  width: 600px;
+}
+
+.Login-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.Login-form>* {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login-form>*:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Login input {
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 15px 10px;
+}
+
+.Login label {
+  font-size: 20px;
+}
+
+.Login button {
+  font-size: 18px;
+  padding: 15px 20px;
+}
+
+.Login-form_type_error {
+  margin-top: 5px;
+  font-size: 16px;
+  color: red;
+}
+
+.Login-error {
+  font-size: 16px;
+  color: red;
+}

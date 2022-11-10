@@ -1,0 +1,39 @@
+.Register {
+  width: 600px;
+}
+
+.Register-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.Register-form>* {
+  display: flex;
+  flex-direction: column;
+}
+
+.Register-form>*:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Register-form_type_error {
+  margin-top: 5px;
+  font-size: 16px;
+  color: red;
+}
+
+.Register input {
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 15px 10px;
+}
+
+.Register label {
+  font-size: 20px;
+}
+
+.Register button {
+  font-size: 18px;
+  padding: 15px 20px;
+}

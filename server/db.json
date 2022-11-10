@@ -1,4 +1,30 @@
 {
+  "users": [
+    {
+      "email": "admin@mail.ru",
+      "password": "$2a$10$3iczCcUd12dV7zOmtf6tcej1e50znI3d.2Jr7N6e11SZKYG9xhUri",
+      "username": "Admin",
+      "id": 1
+    },
+    {
+      "email": "admind@mail.ru",
+      "password": "$2a$10$nYvbfCHrDyPFgrOwItgiru3QElWTSz87yYEtASEmUu8AlANmUI8tW",
+      "username": "Admin",
+      "id": 2
+    },
+    {
+      "email": "oiiooioi@mail.ri",
+      "password": "$2a$10$DJ/QxDyRaWHSoAJ/wy4l0.Vm/0v3ek6rjiQlSpCifQNo2dmf/J6j2",
+      "username": "Admin23",
+      "id": 3
+    },
+    {
+      "email": "adminn@mail.ru",
+      "password": "$2a$10$6USghho1y2o7nWtmrAZm9OlI4jGsME1OiKABTczbATr8llAjaUABG",
+      "username": "USER",
+      "id": 4
+    }
+  ],
   "electronics": [
     {
       "type": "смартфоны",

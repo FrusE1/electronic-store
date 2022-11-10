@@ -1,3 +1,4 @@
+import diff from "../../../utils/diff";
 import qs from "../../../utils/qs-params";
 import electronics from "../../electronics/actions"
 
@@ -9,21 +10,26 @@ export const loadElectronics = (currentParams = {}, newParams = {}, historyRepla
   const params = {
     limit: Number(urlParams._limit),
     page: Number(urlParams._page),
-    query: urlParams.name_like,
-    sort: urlParams._order === 'desc' ? '-'.concat(urlParams._sort) : urlParams._sort,
-    type: urlParams.type_like,
+    query: (urlParams.name_like) || '',
+    sort: (urlParams._order === 'desc' ? '-'.concat(urlParams._sort) : urlParams._sort) || '',
+    type: (urlParams.type_like) || '',
     ...newParams
   };
 
   // Итоговые URL параметры
-  let resultParams = {
+  let resultParams = diff({
     _limit: historyReplace ? urlParams._limit || 8 : params.limit || 8,
     _page: historyReplace ? urlParams._page || 1 : params.page || 1,
-    name_like: historyReplace ? urlParams.name_like || '' : params.query || '',
-    _sort: historyReplace ? urlParams._sort || '' : params.sort.indexOf('-') === 0 ? params.sort.replace(/^-/, '') : params.sort || '',
+    name_like: historyReplace ? urlParams.name_like || '' : params.query,
+    _sort: historyReplace ? urlParams._sort || '' : params.sort.indexOf('-') === 0 ? params.sort.replace(/^-/, '') : params.sort,
     _order: historyReplace ? urlParams._order || 'asc' : params.sort.indexOf('-') === 0 ? 'desc' : 'asc',
-    type_like: historyReplace ? urlParams.type_like || '' : params.type || ''
-  };
+    type_like: historyReplace ? urlParams.type_like || '' : params.type
+  }, {
+    name_like: '',
+    _order: 'asc',
+    type_like: '',
+    _sort: ''
+  });
 
   return async function (dispatch) {
     dispatch(electronics.load())

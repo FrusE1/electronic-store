@@ -6,20 +6,49 @@
   cursor: pointer;
 }
 
+.Button:disabled {
+  opacity: 0.7;
+  cursor: auto
+}
+
 .Button_type_blue {
-  background-color: rgb(87, 87, 236);
+  background-color: rgb(47, 47, 244);
 }
 
 .Button_type_blue:hover,
 .Button_type_blue:focus {
-  background-color: rgb(44, 44, 200);
+  background-color: rgb(26, 26, 197);
 }
 
 .Button_type_red {
-  background-color: rgb(246, 10, 10);
+  background-color: rgb(251, 32, 32);
 }
 
 .Button_type_red:hover,
 .Button_type_red:focus {
-  background-color: rgb(238, 112, 112);
+  background-color: rgb(203, 0, 0);
+}
+
+.Button_type_border-red {
+  color: rgb(251, 32, 32);
+  border: 2px solid rgb(251, 32, 32);
+  background-color: #fff;
+}
+
+.Button_type_border-red:hover,
+.Button_type_border-red:focus {
+  color: rgb(203, 0, 0);
+  border: 2px solid rgb(203, 0, 0);
+}
+
+.Button_type_border-blue {
+  color: rgb(47, 47, 244);
+  border: 2px solid rgb(47, 47, 244);
+  background-color: #fff;
+}
+
+.Button_type_border-blue:hover,
+.Button_type_border-blue:focus {
+  color: rgb(26, 26, 197);
+  border: 2px solid rgb(26, 26, 197);
 }

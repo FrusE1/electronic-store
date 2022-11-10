@@ -1,6 +1,6 @@
 import React from 'react';
 import numberFormat from '../../utils/number-format';
-import Button from '../../ui/button/button-blue';
+import Button from '../../ui/button';
 import propTypes from 'prop-types';
 import { cn as bem, withNaming } from "@bem-react/classname";
 import './style.css';
@@ -17,7 +17,7 @@ function Item({ item, addToBasket }) {
       </div>
       <div className={cn('price')}>{numberFormat(item.price, { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 })}</div>
       <div className={cn('name')}>{item.name}</div>
-      <Button onClick={() => addToBasket(item)}>В корзину</Button>
+      <Button onClick={() => addToBasket(item)} style="blue">В корзину</Button>
     </div>
   )
 }

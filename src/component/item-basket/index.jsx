@@ -1,6 +1,6 @@
 import React from 'react';
 import numberFormat from '../../utils/number-format';
-import Button from '../../ui/button/button-red';
+import Button from '../../ui/button';
 import propTypes from 'prop-types';
 import { cn as bem, withNaming } from "@bem-react/classname";
 import './style.css';
@@ -17,7 +17,7 @@ function ItemBasket({ item, removeFromBasket }) {
       </div>
       <div className={cn('price')}>{numberFormat(item.price, { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 })}</div>
       <div className={cn('name')}>{item.name}</div>
-      <Button onClick={() => removeFromBasket(item.id)}>Удалить</Button>
+      <Button onClick={() => removeFromBasket(item.id)} style="red">Удалить</Button>
     </div>
   )
 }

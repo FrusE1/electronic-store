@@ -14,6 +14,8 @@ import numberToArray from "./utils/number-to-array";
 import Spinner from "./wrappers/spinner";
 import useInit from "./hooks/use-init";
 import Filter from "./container/filter";
+import Register from "./container/register";
+import Login from "./container/login";
 
 function App() {
 
@@ -63,6 +65,8 @@ function App() {
         </Spinner>
       </Layout>
       {select.modal === 'basket' && <BasketModal />}
+      {select.modal === 'register' && <Register />}
+      {select.modal === 'login' && <Login />}
     </>
   );
 }
