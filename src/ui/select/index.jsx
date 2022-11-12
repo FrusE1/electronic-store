@@ -8,7 +8,7 @@ function Select({ options, value, callback }) {
   const cn = bem('Select');
 
   return (
-    <select className={cn()} defaultValue={value} onChange={(e) => callback(e.target.value)}>
+    <select className={cn()} value={value} onChange={(e) => callback(e.target.value)}>
       {options.map((item) => {
         return <option className={cn('')} key={item.value} value={item.value}>{item.title}</option>
       })}
