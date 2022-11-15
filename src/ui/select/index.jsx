@@ -2,7 +2,6 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { cn as bem } from "@bem-react/classname";
 import './style.css';
-import { useCallback } from 'react';
 
 function Select({ options, value, callback }) {
   const cn = bem('Select');

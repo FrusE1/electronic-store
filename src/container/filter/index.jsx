@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import './style.css';
 import { loadElectronics } from "../../store/async-actions/electronics";
 import { useDispatch, useSelector } from 'react-redux';
 import Select from '../../ui/select';
-// import Input from '../../ui/input';
 import throttle from 'lodash.throttle';
 import Input from '../../ui/input/input';
+import { useEffect } from 'react';
 
 export default function Filter() {
   const dispatch = useDispatch();
@@ -20,11 +20,14 @@ export default function Filter() {
   }
   // Загрузка по поиску
   const loadingQuery = useCallback(throttle(query => dispatch(loadElectronics(params, { query, page: 1 })), 1000), []);
-
   const onChange = useCallback(e => {
     setValueField(e.target.value);
     loadingQuery(e.target.value);
   }, []);
+
+  useEffect(() => {
+    setValueField(params.query)
+  }, [params.query])
 
   // Данные по сортировке
   const options = {
@@ -36,9 +39,9 @@ export default function Filter() {
     ]), []),
     type: useMemo(() => ([
       { value: "", title: "По умолчанию" },
-      { value: "Смартфоны", title: "смартфоны" },
-      { value: "Ноутбуки", title: "ноутбуки" },
-      { value: "Фотоаппараты", title: "фотоаппараты" }
+      { value: "Смартфоны", title: "Смартфоны" },
+      { value: "Ноутбуки", title: "Ноутбуки" },
+      { value: "Фотоаппараты", title: "Фотоаппараты" }
     ]), [])
   }
 
