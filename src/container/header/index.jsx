@@ -9,12 +9,16 @@ import Button from '../../ui/button';
 import user from '../../store/user/actions';
 import { useEffect } from 'react';
 import { login } from "../../store/async-actions/user";
+import ButtonLink from '../../ui/button-link';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 function Header() {
 
   const bem = withNaming({ e: '__' })
   const cn = bem('Header');
 
+  const location = useLocation();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const select = useSelector(state => {
     return {
@@ -24,13 +28,18 @@ function Header() {
     }
   });
 
+
   const callbacks = {
     // Открытие модалки с корзиной
     openModalBasket: useCallback((name) => dispatch(modal.open(name)), []),
-    // Открытие модалки с формой регистрации
-    openModalRegister: useCallback(() => dispatch(modal.open('register')), []),
-    // Открытие модалки с формой входа
-    openModalLogin: useCallback(() => dispatch(modal.open('login')), []),
+    // Переход к регистрации
+    onRegister: useCallback(() => {
+      navigate('/register', { state: { back: location.pathname } });
+    }, [location.pathname]),
+    // Переход к авторизации
+    onLogin: useCallback(() => {
+      navigate('/login', { state: { back: location.pathname } });
+    }, [location.pathname]),
     // Выйти с аккаунта
     logout: useCallback(() => {
       dispatch(user.logout());
@@ -49,12 +58,12 @@ function Header() {
       <Basket count={select.basket.count} openModal={callbacks.openModalBasket}></Basket>
       {select.auth
         ? <div className={cn('profile')}>
-          <div className={cn('username')}>{select.user?.username}</div>
+          <Link to='/profile' className={cn('username')}>{select.user?.username}</Link>
           <Button style={'border-red'} onClick={callbacks.logout}>Выйти</Button>
         </div>
         : <>
-          <Button onClick={callbacks.openModalRegister} style="border-red">Зарегистрироваться</Button>
-          <Button onClick={callbacks.openModalLogin} style="border-blue">Войти</Button>
+          <Button to='/register' style="border-red" onClick={callbacks.onRegister}>Зарегистрироваться</Button>
+          <Button to='/login' style="border-blue" onClick={callbacks.onLogin}>Войти</Button>
         </>
       }
     </header >

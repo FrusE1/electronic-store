@@ -5,6 +5,18 @@
       "password": "$2a$10$3iczCcUd12dV7zOmtf6tcej1e50znI3d.2Jr7N6e11SZKYG9xhUri",
       "username": "Admin",
       "id": 1
+    },
+    {
+      "email": "oiiooioddsi@mail.ri",
+      "password": "$2a$10$r36LUQTPtO6u5oqqBRCA/eAt2CT17Edw5TN98sxDe4WQz714GxKMO",
+      "username": "USER_TEST",
+      "id": 2
+    },
+    {
+      "email": "admisn@mail.ru",
+      "password": "$2a$10$YEEBokF8BUBVjVebiQKKk.eaEo2zslRHjwcNfHP/nimn8LSJvEDim",
+      "username": "USER_TEst",
+      "id": 3
     }
   ],
   "electronics": [

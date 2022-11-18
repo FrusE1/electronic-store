@@ -1,39 +1,42 @@
-.Register {
+.Register-form {
   width: 600px;
+  border: 1px solid rgb(60, 60, 60);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.Register-title {
+.Register-form__title {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 40px;
 }
 
-.Register-form>* {
+.Register-form__form>* {
   display: flex;
   flex-direction: column;
 }
 
-.Register-form>*:not(:last-child) {
+.Register-form__form>*:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.Register-form_type_error {
+.Register-form__form_type_error {
   margin-top: 5px;
   font-size: 16px;
   color: red;
 }
 
-.Register input {
+.Register-form input {
   font-size: 18px;
   margin-top: 10px;
   padding: 15px 10px;
 }
 
-.Register label {
+.Register-form label {
   font-size: 20px;
 }
 
-.Register button {
+.Register-form button {
   font-size: 18px;
   padding: 15px 20px;
 }

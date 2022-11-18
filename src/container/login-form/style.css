@@ -1,44 +1,47 @@
-.Login {
+.Login-form {
   width: 600px;
+  border: 1px solid rgb(60, 60, 60);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.Login-title {
+.Login-form__title {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 40px;
 }
 
-.Login-form>* {
+.Login-form__form>* {
   display: flex;
   flex-direction: column;
 }
 
-.Login-form>*:not(:last-child) {
+.Login-form__form>*:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.Login input {
+.Login-form input {
   font-size: 18px;
   margin-top: 10px;
   padding: 15px 10px;
 }
 
-.Login label {
+.Login-form label {
   font-size: 20px;
 }
 
-.Login button {
+.Login-form button {
   font-size: 18px;
   padding: 15px 20px;
 }
 
-.Login-form_type_error {
+.Login-form__form_type_error {
   margin-top: 5px;
   font-size: 16px;
   color: red;
 }
 
-.Login-error {
+.Login-form__error {
   font-size: 16px;
   color: red;
 }

@@ -1,4 +1,4 @@
-.Button {
+.Button-link {
   color: #fff;
   font-weight: 600;
   padding: 8px 16px;
@@ -6,57 +6,53 @@
   cursor: pointer;
 }
 
-.Button a {
-  color: inherit;
-}
-
-.Button:disabled {
+.Button-link:disabled {
   opacity: 0.7;
   cursor: auto
 }
 
 /* Синяя кнопка */
-.Button_type_blue {
+.Button-link_type_blue {
   background-color: rgb(47, 47, 244);
 }
 
-.Button_type_blue:hover,
-.Button_type_blue:focus {
+.Button-link_type_blue:hover,
+.Button-link_type_blue:focus {
   background-color: rgb(26, 26, 197);
 }
 
 /* Красная кнопка */
-.Button_type_red {
+.Button-link_type_red {
   background-color: rgb(251, 32, 32);
 }
 
-.Button_type_red:hover,
-.Button_type_red:focus {
+.Button-link_type_red:hover,
+.Button-link_type_red:focus {
   background-color: rgb(203, 0, 0);
 }
 
 /* Кнопка с красной границей */
-.Button_type_border-red {
+.Button-link_type_border-red {
   color: rgb(251, 32, 32);
   border: 2px solid rgb(251, 32, 32);
   background-color: #fff;
 }
 
-.Button_type_border-red:hover,
-.Button_type_border-red:focus {
+.Button-link_type_border-red:hover,
+.Button-link_type_border-red:focus {
   color: rgb(203, 0, 0);
   border: 2px solid rgb(203, 0, 0);
 }
 
 /* Кнопка с синей границей */
-.Button_type_border-blue {
+.Button-link_type_border-blue {
   color: rgb(47, 47, 244);
   border: 2px solid rgb(47, 47, 244);
   background-color: #fff;
 }
 
-.Button_type_border-blue:hover,
-.Button_type_border-blue:focus {
+.Button-link_type_border-blue:hover,
+.Button-link_type_border-blue:focus {
   color: rgb(26, 26, 197);
   border: 2px solid rgb(26, 26, 197);
 }

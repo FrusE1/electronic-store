@@ -1,21 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
 import { cn as bem, withNaming } from "@bem-react/classname";
 import './style.css';
 
-function Button({ children, style, ...props }) {
+function ButtonLink({ children, style, ...props }) {
 
   const bem = withNaming({ e: '__', m: '_' })
-  const cn = bem('Button');
+  const cn = bem('Button-link');
 
   return (
-    <button className={cn(style ? { type: style } : null)} {...props}>{children}</button>
+    <Link className={cn(style ? { type: style } : null)} {...props}>{children}</Link>
   )
 }
 
-Button.propTypes = {
+ButtonLink.propTypes = {
   children: propTypes.node.isRequired,
   style: propTypes.string
 }
 
-export default React.memo(Button);
+export default React.memo(ButtonLink);
