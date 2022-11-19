@@ -8,8 +8,8 @@ export const loadElectronics = (currentParams = {}, newParams = {}, historyRepla
   const urlParams = qs.parse(window.location.search) || {};
 
   const params = {
-    limit: Number(urlParams._limit),
-    page: Number(urlParams._page),
+    limit: Number(urlParams._limit) || 8,
+    page: Number(urlParams._page) || 1,
     query: (urlParams.name_like) || '',
     sort: (urlParams._order === 'desc' ? '-'.concat(urlParams._sort) : urlParams._sort) || '',
     type: (urlParams.type_like) || '',
@@ -18,8 +18,8 @@ export const loadElectronics = (currentParams = {}, newParams = {}, historyRepla
 
   // Итоговые URL параметры
   let resultParams = diff({
-    _limit: historyReplace ? urlParams._limit || 8 : params.limit || 8,
-    _page: historyReplace ? urlParams._page || 1 : params.page || 1,
+    _limit: historyReplace ? urlParams._limit || 8 : params.limit,
+    _page: historyReplace ? urlParams._page || 1 : params.page,
     name_like: historyReplace ? urlParams.name_like || '' : params.query,
     _sort: historyReplace ? urlParams._sort || '' : params.sort.indexOf('-') === 0 ? params.sort.replace(/^-/, '') : params.sort,
     _order: historyReplace ? urlParams._order || 'asc' : params.sort.indexOf('-') === 0 ? 'desc' : 'asc',

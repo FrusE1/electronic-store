@@ -1,12 +1,12 @@
-.Profile {
+.Error {
+  flex: 1 1 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1 1 auto;
 }
 
-.Profile__name {
-  font-size: 36px;
+.Error p {
+  color: red;
+  font-size: 40px;
   font-weight: 600;
 }

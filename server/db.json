@@ -5,18 +5,6 @@
       "password": "$2a$10$3iczCcUd12dV7zOmtf6tcej1e50znI3d.2Jr7N6e11SZKYG9xhUri",
       "username": "Admin",
       "id": 1
-    },
-    {
-      "email": "oiiooioddsi@mail.ri",
-      "password": "$2a$10$r36LUQTPtO6u5oqqBRCA/eAt2CT17Edw5TN98sxDe4WQz714GxKMO",
-      "username": "USER_TEST",
-      "id": 2
-    },
-    {
-      "email": "admisn@mail.ru",
-      "password": "$2a$10$YEEBokF8BUBVjVebiQKKk.eaEo2zslRHjwcNfHP/nimn8LSJvEDim",
-      "username": "USER_TEst",
-      "id": 3
     }
   ],
   "electronics": [
@@ -25,6 +13,12 @@
       "name": "Xiaomi Redmi Note 9",
       "image": "https://i01.appmifile.com/webfile/globalimg/Cindy/J15Sgrey!800x800!85.png",
       "price": 12340,
+      "characteristics": {
+        "Цвет": "Черный",
+        "Процессор": "Qualcomm Snapdragon 865",
+        "Оперативная память": "4",
+        "Встроенная память": "126"
+      },
       "id": 1
     },
     {
@@ -32,6 +26,13 @@
       "name": "Lenovo IdeaPad Gaming 3",
       "image": "https://www.lenovo.com/medias/laptops-ideapad-s-series-ideapad-gaming-3-gallery-2.png?context=bWFzdGVyfHJvb3R8NjI2MjJ8aW1hZ2UvcG5nfGg5MS9oMTYvMTA5ODA5MDk1ODAzMTgucG5nfDhlNDFiMTBkYTk4ZmY0NmQyODhjNDZjMWI1YjFlYTMwNDQyNGEzNGY5ZTEyNWEyMGRjMWJlYzUwODY2ZjY4Zjc",
       "price": 62990,
+      "characteristics": {
+        "Цвет": "Серый",
+        "Процессор": "Intel Core i5",
+        "Видеокарта": "GeForce GTX 1050",
+        "Оперативная память": "8",
+        "Толщина": "20"
+      },
       "id": 2
     },
     {

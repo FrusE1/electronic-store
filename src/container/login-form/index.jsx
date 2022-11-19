@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import Input from '../../ui/input/input';
 import { cn as bem, withNaming } from "@bem-react/classname";
@@ -6,7 +6,6 @@ import './style.css';
 import Button from '../../ui/button';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from "../../store/async-actions/user";
-import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function LoginForm() {
 
@@ -14,19 +13,12 @@ export default function LoginForm() {
   const cn = bem('Login-form');
 
   const dispatch = useDispatch();
-  const location = useLocation();
-  const navigate = useNavigate();
 
   const OPTION_REGISTER = {
     required: "Необходимо заполнить"
   }
 
-  const select = useSelector(state => {
-    return {
-      error: state.user.error,
-      auth: state.user.auth
-    }
-  })
+  const error = useSelector(state => state.user.error)
 
   const {
     register,
@@ -37,12 +29,6 @@ export default function LoginForm() {
     mode: 'onBlur'
   });
 
-  useEffect(() => {
-    if (select.auth) {
-      const back = location.state?.back ? location.state.back : '/'
-      navigate(back)
-    }
-  }, [select.auth])
 
   const onSubmit = (data) => {
     dispatch(login(data));
@@ -62,7 +48,7 @@ export default function LoginForm() {
               message: 'Введите почту'
             }
           })} />
-          {errors?.email && <p className={cn('form', { type: 'error' })}>{errors.email.message}</p>}
+          {errors?.email && <p className={cn('form-error')}>{errors.email.message}</p>}
         </label>
         <label>
           Пароль
@@ -73,9 +59,9 @@ export default function LoginForm() {
               message: 'Слишком короткий пароль'
             }
           })} />
-          {errors?.password && <p className={cn('form', { type: 'error' })}>{errors.password.message}</p>}
+          {errors?.password && <p className={cn('form-error')}>{errors.password.message}</p>}
         </label>
-        {select.error && <div className={cn('error')}>{select.error}</div>}
+        {error && <div className={cn('error')}>{error}</div>}
         <div className={cn('submit')}>
           <Button type="submit" style="blue" disabled={!isValid}>Войти</Button>
         </div>

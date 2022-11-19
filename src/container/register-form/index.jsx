@@ -6,28 +6,17 @@ import './style.css';
 import Button from '../../ui/button';
 import { userRegister } from "../../store/async-actions/user";
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function RegisterForm() {
 
   const bem = withNaming({ e: '__' })
   const cn = bem('Register-form');
 
-  const location = useLocation();
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const OPTION_REGISTER = {
     required: "Необходимо заполнить"
   }
-
-  const select = useSelector(state => {
-    return {
-      error: state.user.error,
-      auth: state.user.auth
-    }
-  })
 
   const {
     register,
@@ -43,13 +32,6 @@ export default function RegisterForm() {
     reset();
   }
 
-  useEffect(() => {
-    if (select.auth) {
-      const back = location.state?.back ? location.state.back : '/'
-      navigate(back)
-    }
-  }, [select.auth])
-
   return (
     <div className={cn()}>
       <h1 className={cn('title')}>Регистрация</h1>
@@ -63,7 +45,7 @@ export default function RegisterForm() {
               message: "Слишком короткое имя"
             }
           })} />
-          {errors?.username ? <p className={cn('form', { type: 'error' })}>{errors.username.message}</p> : null}
+          {errors?.username ? <p className={cn('form-error')}>{errors.username.message}</p> : null}
         </label>
         <label>
           Почта
@@ -74,7 +56,7 @@ export default function RegisterForm() {
               message: 'Введите почту'
             }
           })} />
-          {errors?.email && <p className={cn('form', { type: 'error' })}>{errors.email.message}</p>}
+          {errors?.email && <p className={cn('form-error')}>{errors.email.message}</p>}
         </label>
         <label>
           Пароль
@@ -85,7 +67,7 @@ export default function RegisterForm() {
               message: 'Слишком короткий пароль'
             }
           })} />
-          {errors?.password && <p className={cn('form', { type: 'error' })}>{errors.password.message}</p>}
+          {errors?.password && <p className={cn('form-error')}>{errors.password.message}</p>}
         </label>
         <div className={cn('submit')}>
           <Button type="submit" style="blue" disabled={!isValid}>Зарегистрироваться</Button>

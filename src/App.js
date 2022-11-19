@@ -8,6 +8,7 @@ import Main from "./pages/main";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import Profile from "./pages/profile";
+import Error from "./pages/error";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/profile' element={<Profile />} />
+          <Route path='/*' element={<Error />} />
         </Routes>
       </Layout>
       {select.modal === 'basket' && <BasketModal />}

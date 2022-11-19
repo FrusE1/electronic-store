@@ -9,7 +9,6 @@ import Button from '../../ui/button';
 import user from '../../store/user/actions';
 import { useEffect } from 'react';
 import { login } from "../../store/async-actions/user";
-import ButtonLink from '../../ui/button-link';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 function Header() {
@@ -55,6 +54,7 @@ function Header() {
 
   return (
     <header className={cn()}>
+      {!(location.pathname === '/') && <Link to='/' className={cn('link-main')}>&lt; Главная</Link>}
       <Basket count={select.basket.count} openModal={callbacks.openModalBasket}></Basket>
       {select.auth
         ? <div className={cn('profile')}>

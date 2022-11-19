@@ -1,24 +1,32 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { cn as bem, withNaming } from "@bem-react/classname";
+import { login } from "../../store/async-actions/user";
 import './style.css';
 
 export default function Profile() {
 
+  const bem = withNaming({ e: '__' })
+  const cn = bem('Profile');
+
   const navigate = useNavigate();
-  const auth = useSelector(state => state.user.auth);
+  const dispatch = useDispatch();
+  const user = useSelector(state => state.user);
 
   useEffect(() => {
-    if (!auth) {
+    if (localStorage.getItem('user')) {
+      dispatch(login(JSON.parse(localStorage.getItem('user'))));
+    } else {
       navigate('/login')
     }
-  })
+  }, [user.auth])
 
   return (
-    <div>
-      <h1>Username: name</h1>
-      <div>Почта</div>
+    <div className={cn()}>
+      <h1 className={cn('name')}>{user.profile.username}</h1>
+      <div className={cn('email')}>{user.profile.email}</div>
     </div>
   )
 }
