@@ -22,4 +22,4 @@ List.propTypes = {
   render: propTypes.func.isRequired
 }
 
-export default React.memo(List)
+export default React.memo(List);

@@ -4,7 +4,7 @@ const initialState = {
   error: null
 }
 
-export default function electronicsReducer(state = initialState, action) {
+export default function userReducer(state = initialState, action) {
   switch (action.type) {
     // Регистрация успешна
     case "USER_REGISTER_SUCCESS":

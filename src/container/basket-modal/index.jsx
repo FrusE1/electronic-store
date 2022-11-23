@@ -22,6 +22,7 @@ export default function BasketModal() {
       return <ItemBasket
         item={item}
         removeFromBasket={callbacks.removeFromBasket}
+        link={`/electronic/${item.id}`}
       ></ItemBasket>
     }, [])
   }

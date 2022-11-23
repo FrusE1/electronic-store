@@ -9,6 +9,7 @@ import Login from "./pages/login";
 import Register from "./pages/register";
 import Profile from "./pages/profile";
 import Error from "./pages/error";
+import Electronic from "./pages/electronic";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/profile' element={<Profile />} />
+          <Route path='/electronic/:id' element={<Electronic />} />
           <Route path='/*' element={<Error />} />
         </Routes>
       </Layout>

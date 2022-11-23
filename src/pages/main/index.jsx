@@ -1,6 +1,4 @@
-import React, { useCallback } from 'react'
-import { useMemo } from 'react'
-import { useEffect } from 'react'
+import React, { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import Item from '../../component/item'
 import List from '../../component/list'
@@ -26,9 +24,6 @@ export default function Main() {
     }
   });
 
-  // let pagePagination = useMemo(() => getAmountOfPage(select.count, select.params.limit), [select.count]);
-  // let paginationArray = useMemo(() => numberToArray(pagePagination), [pagePagination]);
-
   let pagePagination = getAmountOfPage(select.count, select.params.limit);
   let paginationArray = numberToArray(pagePagination);
 
@@ -49,6 +44,7 @@ export default function Main() {
       return <Item
         item={item}
         addToBasket={callbacks.addToBasket}
+        link={`/electronic/${item.id}`}
       ></Item>
     }, [])
   }

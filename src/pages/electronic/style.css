@@ -1,0 +1,42 @@
+.Electronic {
+  margin: 30px 0;
+}
+
+.Electronic__head {
+  display: flex;
+}
+
+.Electronic__img {
+  width: 800px;
+}
+
+.Electronic__img img {
+  width: 100%;
+  object-fit: cover;
+  transform: scale(0.9);
+}
+
+.Electronic__characteristics {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.Electronic__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.Electronic__desc {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.Electronic__desc h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.Electronic__btn {
+  margin-top: 10px;
+}

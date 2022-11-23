@@ -3,6 +3,7 @@
   height: 60px;
   align-items: center;
   justify-content: end;
+  z-index: 1000;
 }
 
 .Header>*:not(:last-child) {

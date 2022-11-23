@@ -1,0 +1,8 @@
+.List-Characteristics__caption {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.List-Characteristics>*:not(:last-child, .List-Characteristics__caption) {
+  margin-bottom: 10px;
+}
