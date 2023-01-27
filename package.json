@@ -21,11 +21,14 @@
     "redux-thunk": "^2.4.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://fruse1.github.io/electronic-store",
   "scripts": {
     "dev": "concurrently \"npm start\" \"npm run server\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "json-server-auth server/db.json -p 4000"
+    "server": "json-server-auth server/db.json -p 4000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
   },
   "devDependencies": {
     "concurrently": "^7.4.0",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.17.0",
     "json-server-auth": "^2.1.0"
   }
