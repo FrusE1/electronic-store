@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import Header from "./container/header";
 import './style.css';
 import Layout from "./wrappers/layout";
 import BasketModal from "./container/basket-modal";
@@ -25,17 +24,16 @@ function App() {
 
   return (
     <>
-      <Layout>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/electronic/:id' element={<Electronic />} />
-          <Route path='/*' element={<Error />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Main />} />
+          <Route path='login' element={<Login />} />
+          <Route path='register' element={<Register />} />
+          <Route path='profile' element={<Profile />} />
+          <Route path='electronic/:id' element={<Electronic />} />
+          <Route path='*' element={<Error />} />
+        </Route>
+      </Routes>
       {select.modal === 'basket' && <BasketModal />}
     </>
   );
