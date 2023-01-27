@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/electronic-store/static/css/main.db4748a4.css",
-    "main.js": "/electronic-store/static/js/main.fc0506a2.js",
+    "main.js": "/electronic-store/static/js/main.228fc6f3.js",
     "static/media/basket.png": "/electronic-store/static/media/basket.7033f67421d5e63955d5.png",
     "index.html": "/electronic-store/index.html",
     "main.db4748a4.css.map": "/electronic-store/static/css/main.db4748a4.css.map",
-    "main.fc0506a2.js.map": "/electronic-store/static/js/main.fc0506a2.js.map"
+    "main.228fc6f3.js.map": "/electronic-store/static/js/main.228fc6f3.js.map"
   },
   "entrypoints": [
     "static/css/main.db4748a4.css",
-    "static/js/main.fc0506a2.js"
+    "static/js/main.228fc6f3.js"
   ]
 }
